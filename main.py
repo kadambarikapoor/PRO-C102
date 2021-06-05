@@ -2,8 +2,8 @@ import os
 from fpdf import FPDF
 pdf = FPDF()
 pdf.set_auto_page_break(0)
-dir = input('enter the directory of the folder which has the images: ')
-pdfName = input('name of the pdf: ')
+dir = input('Enter the directory of the folder which has the images: ')
+pdfName = input('Name of the pdf: ')
 f = os.walk(dir)
 
 for address, _, files in f:
